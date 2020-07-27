@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './utilityComponents/Header'
+import Footer from './utilityComponents/Footer'
+import Aside from './components/AsideWidget'
+import Home from './components/HomePage'
+import Recent from './components/RecentPage'
+import AboutMe from './components/AboutMePage'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    currentPage: 'null'
+  }
+
+  render() {
+    const { currentPage } = this.state.currentPage
+    return (
+      <div className="App">
+        <Header />
+        <div className="container container-flex">
+          <main role='main'>
+            {currentPage === 'Home' ? <Home /> : currentPage === 'AboutMe' ? <AboutMe /> : <Recent />}
+          </main>
+
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+
 }
 
 export default App;
