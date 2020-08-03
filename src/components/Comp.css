@@ -8,14 +8,18 @@ body {
 img {
   max-width: 100%;
   display: block;
+  
 }
 
 .image-full{
   max-height: 300px;
   width: 100%;
   object-fit: cover;
-  margin-bottom: 2em;
+  object-position: 25% 25%;
+  margin-bottom: 1.5em;
+
 }
+
 
 h1,
 h2,
@@ -27,19 +31,29 @@ h3 {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 0;
 }
 h3{
   color: #1792d2;
 }
+h4{
+  color: #1792d2
+}
 
 a {
   color: #1792d2;
+  text-decoration: none;
+}
+.sidebar-widget a {
+  color: black; 
+}
+.sidebar-widget a :hover {
+  opacity: 0.5;
 }
 a:hover,
 a:focus {
-  color: #143774;
+  color: #1792d2;
 }
 strong {
   font-weight: 700;
@@ -89,7 +103,7 @@ strong {
   
 }
 .widget-title{
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: 'Ubuntu', sans-seriff;
   font-weight: 700;
 }
@@ -99,7 +113,7 @@ LAYOUT
 ================ */
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -107,30 +121,39 @@ LAYOUT
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  
 }
 header {
-  background: #f8f8f8;
-  padding: 2em 0;
+  background: #a3c2c2;
+  padding: 1em 0;
   text-align: center;
-  margin-bottom: 1.5em;
+  margin-bottom: 2.2em;
 }
 footer{
   background: #143774;
   color: white;
   text-align: center;
-  padding: 3em 0;
+  padding: 2.5em 0;
 }
+footer p {
+  font-size: 0.95em;
+}
+footer p strong {
+  color: steelblue;
+}
+
 @media (min-width: 675px) {
   .container-flex {
     flex-direction: row;
   }
   main {
-    width: 70%;
+    width: 100%;
+    margin-right: 1.8em;
   }
   aside {
-    width: 25%;
+    width: 22%;
     min-width: 250px;
-    margin-left: 1em;
+
   }
 }
 
@@ -147,20 +170,14 @@ nav li {
 }
 nav a {
   text-decoration: none;
-  color: #707070;
+  color: #ffcc80;
   font-weight: 700;
-  padding: 0.25em 0;
+  padding: 0.4em 0;
 }
 nav a:hover,
 nav a:focus {
-  color: #1792d2;
-}
-
-.current-page{
-  border-bottom: 2px solid silver;
-}
-.current-page:hover {
-  color: #707070;
+  color:  #ff8000;
+  border-bottom: 2px solid silver
 }
 
 @media (max-width: 675px) {
@@ -184,7 +201,8 @@ nav a:focus {
 .article-recent {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2em
+  margin-bottom: 2em;
+  background-color: #F5F5F5;
 }
 
 .article-recent-main {
@@ -196,7 +214,6 @@ nav a:focus {
 .article-image{
   width:100%;
   min-height: 250px;
-
   object-fit: cover;
 /*   object-position: left; */
 }
@@ -227,23 +244,45 @@ nav a:focus {
 /* widgets */
 
 .sidebar-widget{
-  border: 20px solid #efefef;
-  margin-bottom: 2em;
-  padding: 1em;
+  border: 14px solid #efefef;
+  margin-bottom: 1.8em;
+  padding: 1.5em;
 }
-
 .widget-recent-post{
   display:flex;
   flex-direction: column;
-  border: 1px solid #707070;
-  margin-bottom: 1em
+  margin-bottom: 1em;
 }
-
 .widget-recent-post:last-child{
   border: 0;
   margin: 0;
 }
-
 .widget-image{
+  width: 100%;
   order: -1;
+}
+
+.widgetLinks{
+  display: flex;
+  justify-content: space-around;
+  color: #1792d2
+}
+.widgetLinks > a {
+  color: #1792d2;
+  font-size: 0.8em;
+}
+
+
+.focusedAppDiv{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.focusedAppLink{
+  color: white;
+  background-color: steelblue;
+  text-align: center;
+  border-radius: 20px;
+  padding: 1em 1.5em;
 }

@@ -1,27 +1,37 @@
 import React from 'react'
 import '../components/Comp.css'
+import { Link } from 'react-router-dom'
 
-
-const Header = () => {
-  const store = {
-    title: 'Living the simple life',
-    subtitle: 'A BLOG EXPLORING MINIMALISM IN LIFE',
+class Header extends React.Component {
+  state = {
+    title: 'Daniel Palencia',
+    subtitle: 'A WEB DEVELOPER THROUGH AND THROUGH',
   }
-  return (
-    <div className='container container-flex'>
-      <div className='site-title'>
-        <h1>{store.title}</h1>
-        <p className='subtitle'>{store.subtitle}</p>
-      </div>
-      <nav className='nav-list'>
-        <ul>
-          <li><a href="index.html" className='current-page'>HOME</a></li>
-          <li><a href="about-me.html">ABOUT ME</a></li>
-          <li><a href="recent-posts.html">RECENT POSTS</a></li>
-        </ul>
-      </nav>
-    </div>
-  )
+
+  render() {
+
+    return (
+      <header>
+        <div className='container container-flex'>
+          <div className='site-title'>
+            <h1>{this.state.title}</h1>
+            <p className='subtitle'>{this.state.subtitle}</p>
+          </div>
+          <nav className='nav-list'>
+            <ul>
+              <li><Link to="/">HOME</Link></li>
+              <li><Link to="/aboutMe">ABOUT ME</Link></li>
+              <li><Link to="/recent">RECENT PROJECTS</Link></li>
+            </ul>
+
+
+          </nav>
+        </div>
+
+      </header>
+    )
+  }
+
 }
 
 export default Header

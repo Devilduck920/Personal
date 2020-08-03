@@ -4,7 +4,7 @@ import '../components/Comp.css'
 const Footer = () => {
   return (
     <footer>
-      <p><strong>Living the Vida Loca</strong> <br /> GUP-e-RITE 2019</p>
+      <p>Brought to you by <br /> <strong>Gup Productions</strong></p>
     </footer>
 
   )

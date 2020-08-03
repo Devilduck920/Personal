@@ -3,38 +3,29 @@ import './Comp.css'
 
 const AboutMe = () => {
   const store = {
-    articleBody: "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has ..",
-    articleTitle: 'Finding simplicity in life',
-    imageSrc: 'https://images.unsplash.com/photo-1465153690352-10c1b29577f8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9',
-    imageAlt: 'hand and pot',
-    dateCreated: 'July 19, 2019',
-    comments: ' 0 comments'
+    articleTitle: 'My name is Daniel Palencia,',
+    imageSrc: 'https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/57414145_10219281043642883_4821160915007176704_n.jpg?_nc_cat=109&_nc_sid=8bfeb9&_nc_ohc=Hgpu7eGEZS8AX-kbD2E&_nc_ht=scontent-lax3-1.xx&oh=20639e16b9a6d482ef8e604e518aa939&oe=5F4C4C70',
+    imageAlt: 'xmas family picture',
   }
   return (
     <main role='main'>
-      <img src={store.imageSrc} alt="about me " className='image-full' />
-      <h2>My name is Daniel and Living a gabros life saved my life</h2>
-      <p><strong>I used to be a gabros rat</strong>."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        "</p>
-      <p>ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatu</p>
-
+      <img src={store.imageSrc} alt="about me" className='image-full' />
+      <h1> </h1>
+      <p>
+        <strong>I began my Web Development journey </strong> around the time my son was going to be born.
+        I knew I had to make something of myself so that my son could be proud of dad .</p>
+      <p>
+        <strong>I enrolled in a coding bootcamp </strong> called Bloc. The first week i began the bootcamp my
+        son was born and i started thinking maybe this was a bad time to join a bootcamp... later finding out i was right. </p>
+      <p>
+        <strong>I was unable to complete the program </strong> due to my full-time job and my new found Daddy Duties.
+        I do not regret enrolling in this bootcamp because it lit a spark of interest and excitement in my continuing self-education.
+        After being released from the program i told myself that i was not going to stop here.
+      </p>
       <h3>How i turned things around</h3>
-      <p><strong>r. Excepteur sint occaecat cupidatat non proident</strong>. r. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.r. Excepteur sint occaecat cupidatat non
-      </p>
-      <p>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-
-      <h3>Now i live the simple life</h3>
-      <p>proident, sunt in culpa
-      qui officia deserunt mollit anim id est laborum.proident, sunt in culpa qui officia deserunt mollit anim id est
-        laborum.</p>
-      <p>proident, sunt in culpa ui officia deserunt <strong>proident, sunt in culpa
-          qui officia deserunt mollit anim id est laborum.</strong> proident, sunt in culpa
-        qui officia deserunt mollit anim id est laborum. mollit anim id est laborum.</p>
+      <p><strong> I don't go a day without</strong> practicing and learning new code. I found the field i want to immerse myself in.</p>
+      <p>Now that i have a direction of where to go in life i can finally focus on my craft.</p>
+      <h3>" Thinking is the hardest work there is, which is probably the reason so few engage in it. " - <strong> Henry Ford </strong></h3>
     </main>
   )
 }
